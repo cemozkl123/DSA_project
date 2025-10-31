@@ -1,132 +1,113 @@
-🌦️ Weather and Air Quality in Istanbul
-📘 Overview
+# 🌦️ Weather-and-Air-Quality-in-Istanbul
 
-This project investigates the relationship between weather conditions and air quality in Istanbul, Türkiye.
-Specifically, it explores how variables such as rainfall, humidity, and temperature influence air pollutants like PM2.5 and PM10.
+## 💡 *Project Idea*
 
-The project is prepared for DSA210: Introduction to Data Science (Fall 2025–2026), and it follows the complete data science process — from data collection and cleaning to analysis, visualization, and interpretation.
+This project aims to investigate the relationship between **weather conditions** (temperature, rainfall, humidity) and **air quality metrics** (PM2.5, PM10, NO₂, SO₂, CO, O₃) in **Istanbul, Türkiye**.  
+I hypothesize that rainy and humid days will show **lower particulate pollution levels** due to atmospheric cleansing effects, while dry and stagnant conditions will correspond to **higher pollutant concentrations**.  
 
-🎯 Motivation
+By analyzing daily weather and air quality data from 2024, this project seeks to **quantify how weather patterns influence Istanbul’s air quality** and identify which meteorological variables most strongly correlate with pollution levels.
 
-Air pollution is a growing concern in Istanbul due to rapid urbanization, industrial activity, and high traffic density. Weather factors like rain and wind play a crucial role in dispersing or washing away pollutants.
+---
 
-Through this project, we aim to:
+## 💭 *Motivation*
 
-Examine how rainy and dry weather conditions impact air quality levels.
+Living and studying at **Sabancı University**, I have personally noticed that the **air quality is often poor**, especially during dry or stagnant weather conditions.  
+This observation made me wonder: 💡 *does rain actually help clean the air and improve air quality around us?*  
+With Istanbul being one of Türkiye’s most populated and industrially active cities, the link between **weather and pollution** felt like an important question to explore.  
+This project aims to investigate whether **rainfall and humidity** play a measurable role in reducing air pollution — and how weather patterns shape the environmental conditions we live in every day.
 
-Identify which meteorological variables most strongly correlate with changes in air pollution.
+---
 
-Provide data-driven insights that may support environmental policy and public health initiatives.
+## 📊 *Description of Datasets*
+The project will utilize two primary datasets:
 
-💾 Data Sources
-1️⃣ Weather Data (Istanbul, 2024)
+### ☁️ *Weather Dataset*
+- **Source:** [Meteostat](https://meteostat.net/en/place/tr/istanbul)  
+- **Description:** Historical daily weather data for Istanbul in 2024.  
+- **Key Features:**  
+  - 📅 `Date`: Daily timestamps  
+  - 🌡️ `Temperature (°C)`: Average daily temperature  
+  - 💧 `Humidity (%)`: Average daily humidity level  
+  - 🌧️ `Precipitation (mm)`: Rainfall volume  
+  - ⛅ `Conditions`: Weather status (e.g., Clear, Rain, Cloudy)  
 
-Source: Meteostat
+---
 
-Description: Historical daily weather data for Istanbul for the year 2024.
+### 🌫️ *Air Quality Dataset*
+- **Source:** [Kaggle – Marmara Air Quality Data Analysis 2024: Insights from Istanbul Kandilli](https://www.kaggle.com/datasets)  
+- **Description:** Hourly air pollutant measurements recorded at the Kandilli monitoring station in Istanbul, aggregated into daily averages.  
+- **Key Features:**  
+  - 📅 `Date`: Measurement date  
+  - 🫧 `PM2.5`, `PM10`: Particulate matter concentrations  
+  - 🧪 `NO₂`, `SO₂`, `CO`, `O₃`: Gas pollutant levels  
+  - 📍 `Station Name`: Monitoring location (Kandilli)  
 
-Features:
+---
 
-Date — Daily record date
+## 🧩 *Plan*
 
-Temperature (°C)
+### 🗂️ *Data Collection*
+- *Weather Data Source:*  
+  - Meteostat — Historical daily weather data (2024)  
+- *Air Quality Data Source:*  
+  - Kaggle — Marmara Air Quality Dataset (2024, Istanbul Kandilli)
 
-Precipitation (mm)
+---
 
-Humidity (%)
+### 🔍 *Data Analysis Approach*
 
-Conditions (Clear, Rain, Cloudy, etc.)
+1. 🧭 *Exploratory Data Analysis*  
+   - Plot daily temperature, humidity, and rainfall distributions  
+   - Visualize pollutant level trends throughout 2024  
+   - Compare pollutant concentrations on rainy vs. clear days  
 
-Purpose: Identify rainy days and measure variations in temperature and humidity to evaluate their effects on air pollution.
+2. 📈 *Statistical Analysis*  
+   - Correlation matrix between weather and pollutant variables  
+   - Regression models to identify which weather factors predict air quality changes  
+   - Hypothesis testing to assess the significance of rainfall effects  
 
-2️⃣ Air Quality Data (Istanbul – Kandilli, 2024)
+3. 🎨 *Visualization and Presentation*  
+   - Time-series graphs for weather and air pollutant trends  
+   - Heatmaps showing weather-pollutant relationships  
+   - Scatter plots comparing precipitation and particulate matter levels  
 
-Source: Kaggle – Marmara Air Quality Data Analysis 2024: Insights from Istanbul Kandilli
+---
 
-Description: Hourly air quality measurements from the Kandilli monitoring station in Istanbul.
+### 🛠️ *Tools and Technologies*
+- 🐍 *Python*: Main programming language  
+- 📦 *Pandas & NumPy*: Data cleaning and manipulation  
+- 📊 *Matplotlib & Seaborn*: Visualization and correlation analysis  
+- 🤖 *Scikit-learn*: Regression and predictive modeling  
 
-Features:
+---
 
-Date
+## 🎯 *Expected Outcomes*
+- Identification of statistically significant correlations between weather variables and pollution metrics.  
+- Quantitative evidence showing **rain and humidity reduce PM2.5 and PM10 levels** in Istanbul.  
+- Visual representations of how weather affects air quality over time.  
+- A simple regression-based predictive framework for estimating pollutant levels using meteorological variables.  
+- Insights that can support **urban air quality management and environmental awareness**.  
 
-PM10, PM25, NO2, SO2, CO, O3
+---
 
-Purpose: Evaluate daily air pollution levels and correlate them with weather variables such as rainfall and humidity.
+## 🧠 *Future Plans*
+Based on the findings from this study, in the future i can:  
+- 🛰️ Develop a **predictive model** that estimates daily air pollution levels using real-time weather data.  
+- 📅 Extend the analysis across multiple years to observe long-term environmental trends.  
+- 🌍 Compare Istanbul’s findings with other major Turkish cities such as Ankara or Izmir.  
+- 💻 Build an interactive **data visualization dashboard** that forecasts pollution conditions based on weather forecasts.  
 
-🔍 Research Questions
+These advancements could help citizens, policymakers, and environmental organizations better understand — and even **anticipate** — how weather influences the air we breathe.
 
-Does rainfall significantly reduce PM2.5 and PM10 levels in Istanbul?
+---
 
-Which weather factors (temperature, humidity, wind, rain) most strongly affect air pollutant concentrations?
+## ⚠️ *Potential Challenges*
+- Missing or inconsistent hourly records in air quality data.  
+- Variability in measurement accuracy across monitoring periods.  
+- Limited generalizability since data represents a single monitoring station (Kandilli).  
+- Distinguishing correlation from causation — weather may influence but not directly cause air quality changes.  
 
-Are there identifiable seasonal or monthly trends linking weather patterns to air quality changes?
+---
 
-🧠 Methodology
-
-Data Collection
-
-Weather data retrieved from Meteostat (2024 daily dataset).
-
-Air quality data downloaded from Kaggle (Kandilli station, hourly readings).
-
-Data Cleaning
-
-Convert time formats to datetime.
-
-Aggregate hourly air quality readings into daily averages.
-
-Handle missing or inconsistent records.
-
-Standardize variable names across datasets.
-
-Merging
-
-Merge weather and air quality datasets using the Date column.
-
-Create a binary variable Rainy (1 = rainy day, 0 = clear day).
-
-Analysis
-
-Perform correlation analysis between weather and pollutant variables.
-
-Conduct statistical hypothesis testing (e.g., t-tests).
-
-Explore predictive relationships using simple regression models.
-
-Visualization
-
-Time-series plots of temperature, rainfall, and pollutant trends.
-
-Heatmaps showing correlation between weather and pollution variables.
-
-Scatter plots illustrating rain’s effect on particulate matter.
-
-📊 Expected Outcomes
-
-Clear correlation patterns between rainfall and lower particulate pollution.
-
-Insights into how Istanbul’s 2024 weather conditions influenced air quality.
-
-Visual evidence supporting the hypothesis that rain and humidity improve air quality.
-
-Potential use for forecasting pollution based on weather patterns.
-
-⚙️ Tools and Technologies
-Category	Tools
-Programming	Python
-Libraries	pandas, numpy, matplotlib, seaborn, scikit-learn
-Platform	Jupyter Notebook / Google Colab
-Version Control	Git & GitHub
-🚧 Limitations and Future Work
-
-Air quality data is limited to one station (Kandilli) — results may not generalize citywide.
-
-Some missing or uneven hourly readings may introduce bias.
-
-Future improvements may include:
-
-Expanding to multiple air quality stations across Istanbul.
-
-Including wind speed and direction for more precise models.
-
-Applying time-series forecasting to predict pollution trends.
+🌍 This project will contribute valuable insights into how weather conditions affect air pollution in Istanbul.  
+The findings could inform **public health awareness**, **environmental planning**, and **data-driven pollution mitigation strategies** for urban environments.
