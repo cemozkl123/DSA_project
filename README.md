@@ -13,9 +13,6 @@ By analyzing daily weather and air quality data from 2024, this project seeks to
 
 Living and studying at **Sabancı University**, I have personally noticed that the **air quality is often poor**, especially during dry or stagnant weather conditions.  
 This observation made me wonder: 💡 *does rain actually help clean the air and improve air quality around us?*  
-With Istanbul being one of Türkiye’s most populated and industrially active cities, the link between **weather and pollution** felt like an important question to explore.  
-This project aims to investigate whether **rainfall and humidity** play a measurable role in reducing air pollution — and how weather patterns shape the environmental conditions we live in every day.
-
 ---
 
 ## 📊 *Description of Datasets*
