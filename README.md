@@ -109,5 +109,39 @@ These advancements could help citizens, policymakers, and environmental organiza
 
 ---
 
-🌍 This project will contribute valuable insights into how weather conditions affect air pollution in Istanbul.  
-The findings could inform **public health awareness**, **environmental planning**, and **data-driven pollution mitigation strategies** for urban environments.
+## 📌 Phase 2 — Data Cleaning, Integration, and Exploratory Analysis
+
+### 🎯 Objective
+The goal of Phase 2 was to prepare and explore the weather and air quality datasets by cleaning, integrating, and analyzing them to uncover initial relationships between meteorological conditions and air pollution levels in Istanbul.
+
+---
+
+### 🛠️ What We Did
+- Cleaned and preprocessed both weather and air quality datasets
+- Converted date fields into a consistent daily format
+- Aggregated hourly air quality measurements into daily averages
+- Handled missing and inconsistent data entries
+- Merged weather and air quality datasets based on date
+- Created a unified daily dataset for Istanbul (2024)
+- Saved the cleaned and merged dataset for further analysis in Phase 3
+
+---
+
+### 📊 Exploratory Data Analysis
+- Visualized daily trends of temperature, humidity, precipitation, and pollutants
+- Compared air pollution levels on rainy versus non-rainy days
+- Analyzed seasonal variations in particulate matter and gaseous pollutants
+- Examined distributions and temporal patterns of PM2.5 and PM10
+
+---
+
+### 🔍 Key Findings
+- Rainy days generally exhibit lower PM2.5 and PM10 concentrations, supporting the atmospheric cleansing hypothesis
+- Dry and stagnant weather conditions are associated with higher pollution levels
+- Certain pollutants display seasonal trends, indicating meteorological influence
+- Weather variables appear to play a meaningful role in short-term air quality fluctuations
+
+---
+
+### 💡 Insights & Lessons Learned
+Phase 2 demonstrated the importance of proper data cleaning and alignment when working with multi-source environmental data. The exploratory analysis provided early evidence supporting the hypothesis that weather conditions—particularly precipitation and humidity—affect air quality in Istanbul, motivating deeper statistical and predictive analysis in Phase 3.
