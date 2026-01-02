@@ -145,3 +145,43 @@ The goal of Phase 2 was to prepare and explore the weather and air quality datas
 
 ### 💡 Insights & Lessons Learned
 Phase 2 demonstrated the importance of proper data cleaning and alignment when working with multi-source environmental data. The exploratory analysis provided early evidence supporting the hypothesis that weather conditions—particularly precipitation and humidity—affect air quality in Istanbul, motivating deeper statistical and predictive analysis in Phase 3.
+
+## 📌 Phase 3 — Modeling and Interpretation
+
+### 🎯 Objective
+The goal of Phase 3 was to quantitatively model the relationship between meteorological variables and air pollution levels. Using the cleaned dataset from Phase 2, multiple regression-based models were evaluated to determine which approach best captures the relationship between weather conditions and PM10 concentration.
+
+---
+
+### 🛠️ What We Did
+- Loaded the merged daily dataset created in Phase 2
+- Selected key meteorological features including temperature, humidity, and precipitation
+- Trained multiple models to predict PM10 concentration
+- Evaluated model performance using RMSE and R² metrics
+- Compared linear and non-linear modeling approaches
+
+---
+
+### 🏆 Best Performing Model
+Among the evaluated models, **Random Forest Regression** achieved the **lowest RMSE** and the **highest R² score**, indicating superior predictive performance compared to linear models.
+
+The improved performance of Random Forest suggests that the relationship between meteorological variables and PM10 concentration is **non-linear** and cannot be fully captured using simple linear assumptions.
+
+---
+
+### 📊 Key Results
+- Random Forest outperformed Linear Regression in both error reduction and explanatory power
+- Precipitation and humidity are strongly associated with lower PM10 concentrations
+- Temperature shows a weaker and less consistent influence
+- Non-linear interactions between weather variables appear to play an important role in pollution dynamics
+
+---
+
+### 🔍 Interpretation
+The results indicate that weather conditions influence air quality in a complex, non-linear manner. While linear models provide a useful baseline, Random Forest better captures interactions and threshold effects present in the data.
+
+---
+
+### 💡 Insights & Lessons Learned
+Phase 3 highlights the importance of selecting models that match the structure of the data. For this dataset, Random Forest proved to be the most effective approach by capturing non-linear relationships between meteorological factors and PM10 levels, resulting in more accurate predictions.
+
